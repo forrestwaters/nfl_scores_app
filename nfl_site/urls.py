@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    # rewrites the home page to use the live_scores app folder
     url(r'^', include('live_scores.urls')),
     url(r'^admin/', admin.site.urls),
 ]
